@@ -3,6 +3,9 @@
 > **Empowering Real-Time Emergency Aid & Natural Language Disaster SOS Triaging**
 
 [![Demo Video](https://img.shields.io/badge/📹_Watch_Demo_Video-Google_Drive-blue?style=for-the-badge&logo=googledrive)](https://drive.google.com/file/d/1D8aYOfPRxLUryPIMx5KOfMmpXAs0Vhja/view)
+[![Android App Video](https://img.shields.io/badge/📱_Watch_Android_App_Demo-Google_Drive-green?style=for-the-badge&logo=googledrive)](https://drive.google.com/file/d/1B5udOvQJy818Hut69UqmSuGgDZnpqkIF/view?usp=drivesdk)
+
+[![GitHub Repository](https://img.shields.io/badge/📦_GitHub_Repo-ResQ__Route-black?style=for-the-badge&logo=github)](https://github.com/glenrajadurai/ResQ_Route)
 
 ResQ-Route is an emergency response platform designed for rapid disaster relief coordination. Victims and citizens can submit natural language emergency requests (e.g. *"Water rising fast at 104 Riverside Dr. 2 elderly trapped, need insulin and boat rescue"*). 
 
@@ -154,29 +157,6 @@ Open your browser and navigate to `http://localhost:5173`.
 | `/api/requests/<id>/status/` | `PATCH` | Update request status (`UNCLAIMED`, `CLAIMED`, `IN_PROGRESS`, `RESOLVED`) |
 | `/api/stats/` | `GET` | Fetch real-time dashboard analytics metrics |
 | `/api/seed/` | `POST` | Reset database and seed 8 sample disaster scenarios |
-
----
-
-## ☁️ Deployment Instructions (Unified Single-Service Setup)
-
-ResQ-Route is configured for **Unified Single-Service Deployment** using Django + WhiteNoise + React. The Django server hosts both the React frontend and the REST API from a single instance with zero CORS setup needed!
-
-### 🚀 Deploying to Render.com / Railway / Fly.io
-
-1. **Push your code to GitHub**.
-2. **Create a Web Service** on [Render.com](https://render.com) or [Railway.app](https://railway.app).
-3. **Configure Service Settings**:
-   - **Root Directory**: Leave blank (repo root)
-   - **Environment**: Python 3
-   - **Build Command**:
-     ```bash
-     cd frontend && npm install && npm run build && cd ../backend && pip install -r requirements.txt && python manage.py collectstatic --noinput && python manage.py migrate
-     ```
-   - **Start Command**:
-     ```bash
-     cd backend && gunicorn resq_backend.wsgi:application
-     ```
-4. **Deploy!** Your app will be live at `https://your-app.onrender.com` serving both the React UI and API.
 
 ---
 
