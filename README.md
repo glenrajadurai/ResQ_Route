@@ -5,7 +5,7 @@
 [![Demo Video](https://img.shields.io/badge/📹_Watch_Demo_Video-Google_Drive-blue?style=for-the-badge&logo=googledrive)](https://drive.google.com/file/d/1D8aYOfPRxLUryPIMx5KOfMmpXAs0Vhja/view)
 [![Android App Video](https://img.shields.io/badge/📱_Watch_Android_App_Demo-Google_Drive-green?style=for-the-badge&logo=googledrive)](https://drive.google.com/file/d/1B5udOvQJy818Hut69UqmSuGgDZnpqkIF/view?usp=drivesdk)
 
-[![GitHub Repository](https://img.shields.io/badge/📦_GitHub_Repo-ResQ__Route-black?style=for-the-badge&logo=github)](https://github.com/glenrajadurai/ResQ_Route)
+[![GitHub Repository](https://img.shields.io/badge/📦_GitHub_Repo-ResQ__Route-black?style=for-the-badge&logo=github)](https://github.com/jayanesh/disaster-control)
 
 ResQ-Route is an emergency response platform designed for rapid disaster relief coordination. Victims and citizens can submit natural language emergency requests (e.g. *"Water rising fast at 104 Riverside Dr. 2 elderly trapped, need insulin and boat rescue"*). 
 
