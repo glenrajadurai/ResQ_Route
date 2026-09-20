@@ -1,0 +1,1 @@
+web: gunicorn resq_backend.wsgi:application

@@ -155,23 +155,30 @@ Open your browser and navigate to `http://localhost:5173`.
 
 ---
 
-## ☁️ Deployment Instructions
+## ☁️ Deployment Instructions (Unified Single-Service Setup)
 
-### Deploying Frontend on Vercel
-1. Push your repository to **GitHub**.
-2. Connect your repository on [Vercel](https://vercel.com).
-3. Set **Root Directory** to `frontend`.
-4. Deploy! Vercel will automatically build and host the Vite application.
+ResQ-Route is configured for **Unified Single-Service Deployment** using Django + WhiteNoise + React. The Django server hosts both the React frontend and the REST API from a single instance with zero CORS setup needed!
 
-### Deploying Backend on Render / Railway
-1. Create a **Web Service** on [Render.com](https://render.com).
-2. Set **Root Directory** to `backend`.
-3. Set **Build Command**: `pip install -r requirements.txt && python manage.py migrate`
-4. Set **Start Command**: `gunicorn resq_backend.wsgi:application`
-5. Update `frontend/vercel.json` with your live Render backend API URL.
+### 🚀 Deploying to Render.com / Railway / Fly.io
+
+1. **Push your code to GitHub**.
+2. **Create a Web Service** on [Render.com](https://render.com) or [Railway.app](https://railway.app).
+3. **Configure Service Settings**:
+   - **Root Directory**: Leave blank (repo root)
+   - **Environment**: Python 3
+   - **Build Command**:
+     ```bash
+     cd frontend && npm install && npm run build && cd ../backend && pip install -r requirements.txt && python manage.py collectstatic --noinput && python manage.py migrate
+     ```
+   - **Start Command**:
+     ```bash
+     cd backend && gunicorn resq_backend.wsgi:application
+     ```
+4. **Deploy!** Your app will be live at `https://your-app.onrender.com` serving both the React UI and API.
 
 ---
 
 ## 📄 License
 
 This project is open-source under the **MIT License**.
+
