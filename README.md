@@ -2,6 +2,8 @@
 
 > **Empowering Real-Time Emergency Aid & Natural Language Disaster SOS Triaging**
 
+[![Demo Video](https://img.shields.io/badge/📹_Watch_Demo_Video-Google_Drive-blue?style=for-the-badge&logo=googledrive)](https://drive.google.com/file/d/1D8aYOfPRxLUryPIMx5KOfMmpXAs0Vhja/view)
+
 ResQ-Route is an emergency response platform designed for rapid disaster relief coordination. Victims and citizens can submit natural language emergency requests (e.g. *"Water rising fast at 104 Riverside Dr. 2 elderly trapped, need insulin and boat rescue"*). 
 
 ResQ-Route automatically parses the natural text into structured JSON data—extracting urgency level, geocoded map coordinates, supply categories, and required items—plotting them on an interactive live emergency map for volunteer rescue teams and disaster relief organizations.
